@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<section>
+    <table>
+        <tr class="table_head">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Grade</th>
+            <th>Favorite Subject</th>
+            <th>Action</th>
+        </tr>
+        <% for(var i = 0; i < students.length; i++){ %>
+            <tr>
+                <td><a href="/student/<%=students[i]._id%>"><%=students[i].firstname%></a></td>
+                <td><%=students[i].lastname%></td>
+                <td><%=students[i].grade%></td>
+                <td><%=students[i].favsub%></td>
+                <td><a href="/students/<%=students[i]._id%>/edit/"><i class="fas fa-edit"></i></a><form action="/student/<%=students[i]._id%>?_method=DELETE" method="POST"><button><i class="fas fa-trash"></i></button></form></td>
+            </tr>
+        <%} %>
+     </table>
+     <a class="new" href="/new">NEW</a>
+</section>
+
+<%- include("partials/footer") %>

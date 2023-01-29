@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+<section>
+    <table>
+        <tr class="table_head">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Grade</th>
+            <th>Favorite Subject</th>
+            <th>Submit</th>
+        </tr>
+            <form action="/students" method="POST">
+                <tr>
+                    <td><input placeholder="First" name="firstname" /></td>
+                    <td><input placeholder="Last" name="lastname" /></td>
+                    <td><input placeholder="Grade" name="grade" /></td>
+                    <td><input placeholder="Favorite" name="favsub" /></td>
+                    <td><button>Submit</button></td>
+                </tr>
+            </form>
+     </table>
+</section>
+
+<%- include("partials/footer") %>

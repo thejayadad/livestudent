@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 400px;
+    margin: auto;
+    height: 100vh;
+    background: lightcyan;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 70% 15%;
+}
+header{
+    width: 100%;
+}
+header h2{
+    text-align: center;
+    margin-top: 25px;
+}
+
+table{
+    width: 300px;
+    margin: auto;
+    background: whitesmoke;
+    text-align: center;
+}
+
+.table_head{
+    background-color: #222;
+    color: white;
+    padding: 5px;
+}
+th{
+    padding: 4px;
+}
+
+td{
+    background: rgb(209, 197, 197);
+}
+
+footer{
+    width: 100%;
+    font-weight: bold;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 25px;
+}
+
+section{
+    width: 90%;
+    background: #222;
+    margin: auto;
+    height: 100%;
+
+}
+
+input {
+
+    font-size: 10px;
+    background: whitesmoke;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    background: orange;
+    cursor: pointer;
+}
+.new{
+    padding: 10px;
+    color: orange;
+    background: red;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
